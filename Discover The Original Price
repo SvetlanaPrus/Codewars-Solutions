@@ -1,0 +1,6 @@
+
+
+function discoverOriginalPrice(discountedPrice, salePercentage){
+  let result = ( discountedPrice * 100 / (100 - salePercentage) ).toFixed(2);
+  return +result;
+}
