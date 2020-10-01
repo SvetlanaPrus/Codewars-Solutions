@@ -1,0 +1,6 @@
+
+
+function isUndefined(value) {
+  let result = (value === undefined)? true : false;
+  return result;
+}
