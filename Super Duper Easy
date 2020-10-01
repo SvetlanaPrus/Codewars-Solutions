@@ -1,0 +1,6 @@
+
+
+function problem(x){
+  let result;
+  return result = (typeof x === 'string')? "Error" : (x * 50 + 6);
+}
