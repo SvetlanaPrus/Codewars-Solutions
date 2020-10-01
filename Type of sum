@@ -1,0 +1,6 @@
+
+
+function typeOfSum(a, b) {
+  let result
+  return result = typeof (a + b);
+}
