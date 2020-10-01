@@ -1,0 +1,6 @@
+
+
+function boolToWord( bool ){
+  let result;
+  return result = (bool === true)? 'Yes' : 'No';
+}
