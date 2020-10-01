@@ -1,0 +1,7 @@
+
+
+function squareArea(A){
+  let r = 2 * A / Math.PI;
+  r = Math.pow(r, 2);
+  return +r.toFixed(2);
+}
