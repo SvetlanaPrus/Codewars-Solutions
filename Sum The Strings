@@ -1,0 +1,6 @@
+
+
+function sumStr(a,b) {
+  let c = (+a) + (+b);
+  return String(c);
+}
