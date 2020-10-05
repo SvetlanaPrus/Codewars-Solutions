@@ -1,0 +1,18 @@
+//https://www.codewars.com/kata/5a6d3bd238f80014a2000187/train/javascript
+
+
+var ownedCatAndDog = function(catYears, dogYears) {
+  let cat, dog;
+  
+  if (catYears < 15) cat = 0;
+  else if (catYears >= 15 && catYears < 24) cat = 1;
+  else if (catYears === 24) cat = 2;
+  else if (catYears > 24) cat = Math.floor((catYears - 24)/4 + 2);
+  
+  if (dogYears < 15) dog = 0;
+  else if (dogYears >= 15 && dogYears < 24) dog = 1;
+  else if (dogYears === 24) dog = 2;
+  else if (dogYears > 24) dog = Math.floor((dogYears - 24)/5 + 2);
+  
+  return [cat, dog];
+}
