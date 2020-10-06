@@ -1,0 +1,14 @@
+//https://www.codewars.com/kata/534d0a229345375d520006a0/train/javascript
+
+
+
+function isPowerOfTwo(n){
+let s = 0;
+let x = 0;
+  while (n >= 0){
+    x = 2 ** s;
+    if (x < n) s = s + 1;
+    else if (x === n) return true;
+    else return false;
+  }
+}
