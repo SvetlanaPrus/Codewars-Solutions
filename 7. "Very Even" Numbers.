@@ -1,0 +1,14 @@
+//https://www.codewars.com/kata/58c9322bedb4235468000019/train/javascript
+
+
+function isVeryEvenNumber(n) {
+while (n >= 10){
+  let sum = 0;
+  while (n > 0){
+    sum = sum + n % 10;
+    n = (n - n%10)/10; 
+  }
+  n = sum;
+} 
+return n % 2 === 0;
+}
