@@ -1,0 +1,15 @@
+//https://www.codewars.com/kata/558f9f51e85b46e9fa000025/train/javascript
+
+
+
+
+function differenceOfSquares(n){
+let sqSum = 0;
+let sumSq = 0;
+  while (n >= 1){
+    sqSum = sqSum + n;
+    sumSq = sumSq + n ** 2;
+    n = n - 1;
+  }
+  return sqSum ** 2 - sumSq;
+}
