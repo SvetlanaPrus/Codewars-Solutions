@@ -1,0 +1,14 @@
+//https://www.codewars.com/kata/563f037412e5ada593000114/train/javascript
+
+
+
+function calculateYears(principal, interest, tax, desired) {
+if (principal === desired) return 0;
+let years = 1;
+let currentYear = principal + (principal * interest - principal * interest * tax);
+  while (desired > currentYear){
+    years = years + 1;
+    currentYear = currentYear + (currentYear * interest - currentYear * interest * tax);
+  }
+  return years;
+}
