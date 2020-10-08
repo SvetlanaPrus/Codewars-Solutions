@@ -1,0 +1,12 @@
+//https://www.codewars.com/kata/544aed4c4a30184e960010f4/train/javascript
+
+
+function divisors(integer) {
+let array = [];
+  for (let i = 2; i < integer; i++){
+    if (integer % i === 0){
+      array.push(i);
+    }
+  }
+  return (array.length === 0)? `${integer} is prime` : array;                   //obrati vnimanie!, chto sravnivat nado ne sam massiv, tipo arr === [], a ego dlinu-znachenie
+}
