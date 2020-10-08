@@ -1,0 +1,14 @@
+//https://www.codewars.com/kata/562f91ff6a8b77dfe900006e/train/javascript
+
+
+function movie(card, ticket, perc){
+let count = 0;
+let resA = 0;
+let resB = card;
+  while( !(Math.ceil(resB) < resA)){
+    count = count + 1;
+    resA = resA + ticket;
+    resB += ticket * (perc ** count);
+  }
+  return count;
+}
