@@ -1,0 +1,22 @@
+//https://www.codewars.com/kata/57be674b93687de78c0001d9/train/javascript
+
+
+
+function largestPower(n){
+let k = 0;
+  while (n > 3 ** k){       
+    k = k + 1;
+  }
+  return k-1;
+}
+
+
+
+// let k = 0;
+// let m = 3 ** k;   //1 
+//   while (n > m){       
+//     k = k + 1;
+//     m = 3 ** k; 
+//     if (n < m) return k-1;
+//   }
+//   return k-1;
