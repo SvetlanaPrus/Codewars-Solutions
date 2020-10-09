@@ -1,0 +1,12 @@
+Draw stairs
+
+
+
+function drawStairs(n){
+let stairs = '';
+  for (let i = 0; i < n; i++){               // kol-vo probelov v nachale stroki
+    stairs = stairs + ' '.repeat(i) + 'I';
+    if (i < n - 1) stairs = stairs + '\n';
+  }
+  return stairs;
+}
