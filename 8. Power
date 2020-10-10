@@ -1,0 +1,14 @@
+//https://www.codewars.com/kata/562926c855ca9fdc4800005b/train/javascript
+
+
+
+function numberToPower(number, power){
+let i = 0;
+let num = 1;
+if (power === 0) return 1;
+  do {
+    i = i + 1;
+    num = num * number;
+  } while (i < power)
+  return num;
+}
