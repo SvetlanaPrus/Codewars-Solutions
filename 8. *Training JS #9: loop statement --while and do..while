@@ -1,0 +1,16 @@
+//https://www.codewars.com/kata/57216d4bcdd71175d6000560/train/javascript
+
+
+function padIt(str,n){
+let result;
+let star = '*';
+  while (n > 0){
+    if (n % 2 === 0){
+      n = n / 2;
+      result = star.repeat(n) + str + star.repeat(n);
+    } else {
+      result = star.repeat(Math.ceil(n/2)) + str + star.repeat(Math.floor(n/2));
+    } 
+    return result;
+  }
+}
