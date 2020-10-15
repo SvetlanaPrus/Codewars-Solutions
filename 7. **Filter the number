@@ -1,0 +1,13 @@
+//https://www.codewars.com/kata/55b051fac50a3292a9000025/train/javascript
+
+
+function FilterString(value) {
+let result = '';
+    for (let i = 0; i < value.length; i++){
+      //if ( Number(value[i]) ){                      //eto moj variant, kotorij ne rabotal!
+      if (isNaN(value[i]) === false){              //eto to, chto podskazali, kak nado delat*
+        result = result + value[i];
+      } 
+    }
+    return +result;
+}
