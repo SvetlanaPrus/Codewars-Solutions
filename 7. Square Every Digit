@@ -1,0 +1,12 @@
+//https://www.codewars.com/kata/546e2562b03326a88e000020/train/javascript
+
+
+
+function squareDigits(num){
+  num = num + '';
+  let str = '';
+    for (let i = 0; i < num.length; i++){
+      str = str + Math.pow(num[i], 2);
+    }
+    return +str;
+}
