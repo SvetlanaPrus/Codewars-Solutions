@@ -1,0 +1,19 @@
+//https://www.codewars.com/kata/54c27a33fb7da0db0100040e/train/javascript
+
+Given an integral number, determine if it's a square number.
+Examples:
+-1  =>  false
+ 0  =>  true
+ 3  =>  false
+ 4  =>  true
+25  =>  true
+26  =>  false
+
+
+
+****************************
+
+var isSquare = function(n){
+  let k = Math.sqrt(n);
+    return (k % 1 === 0)? true : false;
+}
