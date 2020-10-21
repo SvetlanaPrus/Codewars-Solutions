@@ -1,0 +1,21 @@
+//https://www.codewars.com/kata/5e030f77cec18900322c535d/train/javascript
+
+
+function minimum(a, x) {
+let maxNum = a;
+let minNum = a;
+let max = 0;
+let min = 0;
+
+  while (maxNum % x !== 0){
+    maxNum = maxNum + 1;
+  }
+  max = maxNum - a;
+  
+  while (minNum % x !== 0){
+    minNum = minNum - 1;
+  }
+  min = a - minNum;
+  
+  return Math.min(max, min);
+}
