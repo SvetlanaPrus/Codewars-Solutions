@@ -1,7 +1,7 @@
 //https://www.codewars.com/kata/5e030f77cec18900322c535d/train/javascript
 
 
-function minimum(a, x) {
+function minimum(a, x) {               //moe reshenie
 let maxNum = a;
 let minNum = a;
 let max = 0;
@@ -19,3 +19,10 @@ let min = 0;
   
   return Math.min(max, min);
 }
+
+
+***************************************
+
+function minimum(a, x) {                 //reshenie ot Larisi, uchitelja
+  return Math.min(x - a % x, a % x)  
+}                                     
