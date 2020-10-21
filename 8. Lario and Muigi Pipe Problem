@@ -1,0 +1,10 @@
+//https://www.codewars.com/kata/56b29582461215098d00000f/train/javascript
+
+
+
+function pipeFix(numbers){
+let newArr = [];
+  for (let el = numbers[0]; el <= numbers[numbers.length-1]; el++)
+    newArr.push(el);
+      return newArr;
+}
