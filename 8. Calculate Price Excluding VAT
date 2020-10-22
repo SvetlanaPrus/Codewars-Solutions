@@ -1,0 +1,9 @@
+//https://www.codewars.com/kata/5890d8bc9f0f422cf200006b/train/javascript
+
+
+//return price without vat
+
+function excludingVatPrice(price){
+  if (price === null) return -1;
+    return +(price/1.15).toFixed(2);
+}
