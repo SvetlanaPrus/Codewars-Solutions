@@ -1,0 +1,7 @@
+//https://www.codewars.com/kata/57a386117cb1f31890000039/train/javascript
+
+
+function parseF(s) {
+  if ( isNaN(Number.parseFloat(s)) === true || isNaN(Number.parseInt(s)) === true) return null;
+    else return Number.parseFloat(s);
+}
