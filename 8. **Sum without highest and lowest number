@@ -1,0 +1,12 @@
+//https://www.codewars.com/kata/576b93db1129fcf2200001e6/train/javascript
+
+
+
+function sumArray(arr){
+  let sum = 0;
+  if (arr === null || arr.length <= 1) return 0;            //pay attention: *** arr === null ***  (eto proverka, sostoit li nash massiv iz odnogo 'null')
+  for (let el of arr) {
+    sum += el;
+  }   
+  return sum - Math.min(...arr) - Math.max(...arr);
+}
