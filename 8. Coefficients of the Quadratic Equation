@@ -1,0 +1,14 @@
+//https://www.codewars.com/kata/5d59576768ba810001f1f8d6/train/javascript
+
+
+
+function quadratic(x1, x2){
+let arr = [];
+                                     //(x-x1) * (x-x2) = 0  , otkrivaem skobki - 
+                                     // x ** 2 + x * (-x2 - x1) + (x1 * x2) = 0;
+  let a = 1;
+  let b = -x1 - x2;
+  let c = x1 * x2;
+    arr.push(a, b, c);
+      return arr;
+}
