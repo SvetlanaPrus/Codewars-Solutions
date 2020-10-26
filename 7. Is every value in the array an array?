@@ -1,0 +1,11 @@
+//https://www.codewars.com/kata/582c81d982a0a65424000201/train/javascript
+
+
+
+function arrCheck(value){
+let count = 0;
+  for (let el of value) {
+    if (Array.isArray(el) === true) count += 1;
+  }
+  return (count === value.length)? true : false;
+}
