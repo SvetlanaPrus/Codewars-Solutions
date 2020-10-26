@@ -1,0 +1,12 @@
+//https://www.codewars.com/kata/57293671c98f77e84b000065/train/javascript
+
+
+
+function type(value) {
+let a = 0;
+  if (typeof value === 'object') {                 //proverka, esli eto object
+    a = ({}.toString.call(value)).toLowerCase();   //esli da, poluchaem otvet v vide stroki mal.bukvami
+    return a.slice(8,a.length-1);                  //otmetaem vse lishnee i vozvrashaem otvet
+  }
+  return typeof value;                             //nash otvet vo vseh dr.sluchajah
+}
