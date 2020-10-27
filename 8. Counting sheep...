@@ -1,0 +1,11 @@
+//https://www.codewars.com/kata/54edbc7200b811e956000556/train/javascript
+
+
+
+function countSheeps(arrayOfSheep) {
+let sum = 0;
+  for (let el of arrayOfSheep) {
+    if (el === true) sum = sum + 1;
+  }
+  return (arrayOfSheep === null)? undefined : sum;
+}
