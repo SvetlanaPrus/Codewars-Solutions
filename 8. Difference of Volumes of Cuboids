@@ -1,0 +1,14 @@
+//https://www.codewars.com/kata/58cb43f4256836ed95000f97/train/javascript
+
+
+function findDifference(a, b) {                    //reshenie ochen dlinnoe, nado dumat kak sdelat koroche
+let mul1 = 1;
+let mul2 = 1;
+  for (let i = 0; i < a.length; i++){
+    mul1 = mul1 * a[i];
+  }
+  for (let j = 0; j < b.length; j++){
+    mul2 = mul2 * b[j];
+  }
+  return Math.abs(mul1 - mul2);
+}
