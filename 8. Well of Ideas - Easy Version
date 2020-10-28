@@ -1,0 +1,7 @@
+//https://www.codewars.com/kata/57f222ce69e09c3630000212/solutions/javascript
+
+
+function well(x){
+ let a = x.filter(el => el === "good").length;
+ return (a > 2)? 'I smell a series!': (a>=1)? 'Publish!' : 'Fail!';
+}
