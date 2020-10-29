@@ -1,0 +1,17 @@
+//https://www.codewars.com/kata/580dda86c40fa6c45f00028a/train/javascript
+
+
+
+
+function cubeOdd(arr) {
+let newArr = [];
+let sum = 0;
+  for (let i = 0; i < arr.length; i++){
+    if (Number.isInteger(arr[i])) newArr.push(Math.pow(arr[i],3));
+    else return undefined;
+  } 
+  for (let j = 0; j < newArr.length; j++){
+    if (newArr[j] % 2 !== 0) sum += newArr[j];
+  }
+  return sum;
+}
