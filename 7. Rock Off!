@@ -1,0 +1,23 @@
+//https://www.codewars.com/kata/5b097da6c3323ac067000036/train/javascript
+
+
+function solve(a, b) {                     //moe reshenie
+let sumA = 0, sumB = 0;
+  
+if (a[0] > b[0]) sumA += 1; 
+  else if (a[0] < b[0]) sumB += 1; 
+  
+if (a[1] > b[1]) sumA += 1; 
+  else if (a[1] < b[1]) sumB += 1; 
+  
+if (a[2] > b[2]) sumA += 1; 
+  else if (a[2] < b[2]) sumB += 1; 
+  
+return (sumA > sumB)? (sumA + ', ' + sumB + ': Alice made "Kurt" proud!') : 
+         (sumA < sumB)? (sumA + ', ' + sumB + ': Bob made "Jeff" proud!') : 
+                        (sumA + ', ' + sumB + ': that looks like a "draw"! Rock on!');
+}
+
+
+********************************************
+
