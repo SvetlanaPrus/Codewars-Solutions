@@ -1,0 +1,15 @@
+//https://www.codewars.com/kata/576bb71bbbcf0951d5000044/train/javascript
+
+
+function countPositivesSumNegatives(arr) {
+if (arr === null || arr.length === 0) return [];
+let newArr = [];
+let count = 0;
+let sum = 0;
+  for (let i = 0; i < arr.length; i++){
+    if (arr[i] > 0) count += 1;
+    if (arr[i] < 0) sum += arr[i];
+  }
+  newArr.push(count, sum);
+  return newArr;
+}
