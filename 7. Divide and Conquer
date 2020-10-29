@@ -1,0 +1,14 @@
+//https://www.codewars.com/kata/57eaec5608fed543d6000021/train/javascript
+
+
+
+function divCon(arr){
+let sum1 = 0, sum2 = 0;
+let newArr = [];
+  for (let i = 0; i < arr.length; i++){
+    if (typeof arr[i] === 'string'){newArr.push(+arr[i]);} 
+      else if (typeof arr[i] === 'number'){sum1 += arr[i];}
+  }
+  for (let j = 0; j < newArr.length; j++){sum2 += newArr[j];}
+    return sum1-sum2;
+}
