@@ -1,0 +1,12 @@
+//https://www.codewars.com/kata/58acfe4ae0201e1708000075/train/javascript
+
+
+function inviteMoreWomen(arr) {
+let sumW = 0;
+let sumM = 0;
+  for (let i = 0; i < arr.length; i++){
+    if (arr[i] > 0) sumM += 1;
+    if (arr[i] < 0) sumW += 1;
+  }
+  return (sumW < sumM)? true : false;
+}
