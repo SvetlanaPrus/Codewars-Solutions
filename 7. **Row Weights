@@ -1,0 +1,23 @@
+//https://www.codewars.com/kata/5abd66a5ccfd1130b30000a9/train/javascript
+
+
+function rowWeights(arr){
+let newArr = [];
+let team1 = 0, team2 = 0;
+if (arr.length === 1) return [arr[0], 0];           //if array only from one element.
+  if (arr.length % 2 === 0){                        //if arr.length is 'even'.
+    for (let i = 0; i < arr.length/2; i++){
+      team1 = team1 + arr[i * 2];
+      team2 = team2 + arr[i * 2 + 1];
+    }
+  }
+  if (arr.length % 2 !== 0){                        //if ...is 'odd', go through as 'even' but at the end add last element.
+    for (let i = 0; i < (arr.length-1)/2; i++){
+      team1 = team1 + arr[i * 2];
+      team2 = team2 + arr[i * 2 + 1];
+    }
+    team1 = team1 + arr[arr.length-1];
+  }
+  newArr.push(team1, team2);
+  return newArr;
+}
