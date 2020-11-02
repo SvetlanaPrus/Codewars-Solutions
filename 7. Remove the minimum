@@ -1,0 +1,17 @@
+//https://www.codewars.com/kata/563cf89eb4747c5fb100001b/train/javascript
+
+
+
+function removeSmallest(arr) {
+if (arr.length === 0 || arr.length === 1) return [];
+let newArr = [], min = arr[0], index = 0;
+  for (let i = 1; i < arr.length; i++){
+    if (arr[i] < min) min = arr[i], index = i;
+    if (arr[i] === min) continue; 
+  }
+  for (let n = 0; n < arr.length; n++){
+    if (n === arr.indexOf(min)) continue;      //arr.splice(index, 1);
+    newArr.push(arr[n]);
+  }
+  return newArr;
+}
