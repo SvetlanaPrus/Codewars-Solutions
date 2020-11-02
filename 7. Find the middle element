@@ -1,0 +1,12 @@
+//https://www.codewars.com/kata/545a4c5a61aa4c6916000755/train/javascript
+
+
+
+let gimme = function (arr) {
+let min = 0, max = 0;
+  for (let i = 0; i < arr.length; i++){
+    min = Math.min(...arr);
+    max = Math.max(...arr);
+  }
+  return arr.indexOf( arr.find((el) => el !== min && el !== max) )
+};
