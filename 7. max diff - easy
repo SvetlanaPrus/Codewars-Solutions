@@ -1,0 +1,12 @@
+//https://www.codewars.com/kata/588a3c3ef0fbc9c8e1000095/train/javascript
+
+
+function maxDiff(arr) {
+if (arr.length === 0 || arr.length === 1) return 0;
+let min = arr[0], max = arr[0], diff = 0;
+  for (let i = 1; i < arr.length; i++){
+    if (arr[i] < min) min = arr[i];
+    if (arr[i] > max) max = arr[i];
+  }
+  return max - (min);
+};
