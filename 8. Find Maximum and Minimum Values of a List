@@ -1,0 +1,20 @@
+//https://www.codewars.com/kata/577a98a6ae28071780000989/train/javascript
+
+
+function min(arr){
+if (arr.length === 1) return arr[0];
+let min = arr[0];
+  for (let i = 1; i < arr.length; i++){
+    if (arr[i] < min) min = arr[i];
+  }
+  return min;
+}
+
+function max(arr1){
+if (arr1.length === 1) return arr1[0];
+let max = arr1[0];
+  for (let i = 1; i < arr1.length; i++){
+    if (arr1[i] > max) max = arr1[i];
+  }
+  return max;  
+}
