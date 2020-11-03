@@ -1,0 +1,13 @@
+//https://www.codewars.com/kata/58646a1173bd9c86080000ef/train/javascript
+
+
+
+function  fibonacci(n){
+if (n === 0) return 0;
+let arr = [1,1], sum = 0;
+  for (let i = 1; i <= n-2; i++){
+    sum = arr[i-1] + arr[i];          //pay attention: don't store 'sum'!
+    arr.push(sum);
+  }
+  return arr[n-1];                  //return last index.
+}
