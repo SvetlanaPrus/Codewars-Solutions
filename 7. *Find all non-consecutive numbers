@@ -1,0 +1,13 @@
+//https://www.codewars.com/kata/58f8b35fda19c0c79400020f/train/javascript
+
+
+function allNonConsecutive (arr) {
+let arrInd = [];                            
+let a = arr.filter( (el, i) => arr[i]-1 !== arr[i-1]).slice(1);   //Find non-consecutive numbers, result = [6, 10]
+  for (let i = 0; i < arr.length; i++){
+    for (let j = 0; j < a.length; j++){       //sort both arrays: arr & a
+      let n = arr[i];                         //according to the condition, we introduce 'n'
+      if (n === a[j]) arrInd.push( {i,n} );   //if items identical, push in to a new array as objects.
+  } }
+  return arrInd;
+}
