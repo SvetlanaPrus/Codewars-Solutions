@@ -1,0 +1,33 @@
+//https://www.codewars.com/kata/5727bb0fe81185ae62000ae3/train/javascript
+
+
+Test.assertEquals(cleanString('abc#d##c'), "ac")
+Test.assertEquals(cleanString('abc####d##c#'), "" )
+
+
+
+
+******************************************************** My solution:
+
+
+function cleanString(str) {                       //input: 'abc#d##c'
+let newArr = [];
+  for (let i = 0; i < str.length; i++){
+    if (str[i] !== '#') newArr.push(str[i]);     //if letter - push, if '#' - delete prev.item
+    else newArr.pop();                           //result = ['a', 'c']
+  }
+  return newArr.join('');                        //result = 'ac' - joined with deleting ','
+}
+
+
+
+
+*************************************************  Other solution from codewars:
+
+function cleanString(s) {
+  let output = '';
+  for (let i = 0; i < s.length; i++) {
+    (s[i] !== '#') ? output += s[i] : output = output.slice(0, -1);
+  }
+  return output;
+}
