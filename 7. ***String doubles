@@ -1,0 +1,21 @@
+//https://www.codewars.com/kata/5a145ab08ba9148dd6000094/train/javascript
+
+Test.assertEquals(doubles('abbbzz'),'ab')
+Test.assertEquals(doubles('zzzzykkkd'),'ykd')
+Test.assertEquals(doubles('abbcccdddda'),'aca')
+Test.assertEquals(doubles('vvvvvoiiiiin'),'voin')
+Test.assertEquals(doubles('rrrmooomqqqqj'),'rmomj')
+Test.assertEquals(doubles('xxbnnnnnyaaaaam'),'bnyam')
+
+
+************************************** Not my solution: (ja ne smogla reshit za vecher)
+
+
+function doubles(s){
+let arr = [];
+  for (let i = 0; i < s.length; i++){
+    if (s[i] !== arr[arr.length-1]) arr.push(s[i]);
+    else arr.pop();
+  }
+   return arr.join('');
+}
