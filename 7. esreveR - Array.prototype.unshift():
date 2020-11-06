@@ -1,0 +1,8 @@
+//https://www.codewars.com/kata/5413759479ba273f8100003d/train/javascript
+
+
+function reverse(arr){
+let arr1 = [];
+arr.forEach( (el,i) => arr1.unshift(arr[i]) );
+  return arr1;
+}
