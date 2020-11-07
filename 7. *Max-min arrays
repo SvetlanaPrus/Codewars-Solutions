@@ -1,0 +1,15 @@
+//https://www.codewars.com/kata/5a090c4e697598d0b9000004/train/javascript
+
+
+function solve(arr){
+let copy = arr.slice(), newArr = [];
+let max = copy.sort((a,b) => b - a);
+  do {
+    newArr.push(max[0]); max.shift();
+    if (max.length !== 0) {
+      newArr.push(max[max.length-1]); 
+      max.pop();
+    }
+  } while (max.length > 0);
+  return newArr;
+};
