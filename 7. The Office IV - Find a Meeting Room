@@ -1,0 +1,7 @@
+//https://www.codewars.com/kata/57f604a21bd4fe771b00009c/train/javascript
+
+
+
+function meeting(arr){
+  return (arr.includes('O'))? arr.indexOf('O') : 'None available!';
+}
