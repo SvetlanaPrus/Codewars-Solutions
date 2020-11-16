@@ -1,0 +1,7 @@
+//https://www.codewars.com/kata/5f6d533e1475f30001e47514/train/javascript
+
+
+
+function consecutive(arr, a, b) {
+  return (arr.indexOf(a) === arr.indexOf(b)-1 || arr.indexOf(a) === arr.indexOf(b)+1)? true : false;
+}
