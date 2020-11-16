@@ -1,0 +1,7 @@
+//https://www.codewars.com/kata/56676e8fabd2d1ff3000000c/train/javascript
+
+
+
+function findNeedle(arr) {
+  return (arr.includes("needle"))? 'found the needle at position '+ arr.indexOf("needle") : 0;
+}
