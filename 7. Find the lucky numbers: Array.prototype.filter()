@@ -1,0 +1,19 @@
+//https://www.codewars.com/kata/580435ab150cca22650001fb/train/javascript
+
+
+********************************************* my solution:
+function filterLucky(arr){
+let a = arr.join(',').split(',');
+let newArr = [];
+  for (let i = 0; i < a.length; i++){
+    let b = a[i].replace(/[^7]/g, '');
+    if (b.length !== 0) newArr.push(Number(a[i]));
+  }
+  return newArr;
+}
+
+*********************************************** other solution: LarisaOvchinnikova & other
+
+var filterLucky=x=>{
+  return x.filter(el => (el+'').includes('7'))
+}
