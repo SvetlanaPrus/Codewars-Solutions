@@ -1,0 +1,15 @@
+//https://www.codewars.com/kata/5a092d9e46d843b9db000064/train/javascript
+
+
+
+************************************************ 1 solution:
+
+function solve(arr){
+  return arr.filter(el => !arr.includes(-el))[0];             //reshila sama, no chut neozidanno, posle pripiski [0]. Nado chut osoznat!
+};
+
+
+*********************************************** 2 solution:
+function solve(arr){
+  return arr.find(el => !arr.includes(-el));
+};
