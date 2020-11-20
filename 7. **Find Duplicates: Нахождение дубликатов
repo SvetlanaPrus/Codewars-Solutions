@@ -1,0 +1,15 @@
+//https://www.codewars.com/kata/5558cc216a7a231ac9000022/train/javascript
+
+
+
+**************************************my solution:
+
+function duplicates(arr) {
+let a = [], b = [];
+  for (let el of arr){
+    a = arr.filter((el,i) => i !== arr.indexOf(el));
+    b = a.filter((el,i) => i === a.indexOf(el));
+  }
+  console.log(b);
+  return b;
+}
