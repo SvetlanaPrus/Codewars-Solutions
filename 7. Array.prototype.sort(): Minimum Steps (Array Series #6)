@@ -1,0 +1,14 @@
+//https://www.codewars.com/kata/5a91a7c5fd8c061367000002/train/javascript
+
+
+
+function minimumSteps(arr, val){
+arr.sort((a, b) => a - b);
+let count = 0, sum = arr[0];
+  if (sum > val) return 0;
+    for (let i = 1; i < arr.length; i++){
+      sum = sum + arr[i];
+      count++;
+      if (sum >= val) return count;
+  }
+}
