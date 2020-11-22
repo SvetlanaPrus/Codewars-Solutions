@@ -1,0 +1,6 @@
+//https://www.codewars.com/kata/566dc05f855b36a031000048/train/javascript
+
+
+function addExtra( arr ){
+  return arr.concat(arr[arr.length-1]+1);
+}
