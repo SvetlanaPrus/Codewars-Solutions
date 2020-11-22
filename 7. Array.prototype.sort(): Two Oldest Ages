@@ -1,0 +1,12 @@
+//https://www.codewars.com/kata/511f11d355fe575d2c000001/train/javascript
+
+
+function twoOldestAges(arr){
+  arr.sort((a, b) => a - b);
+  return [arr[arr.length-2], arr[arr.length-1]];
+}
+
+
+*********************************** Other solution:
+
+const twoOldestAges = (arr) => arr.sort((a, b) => a - b).slice(-2)
