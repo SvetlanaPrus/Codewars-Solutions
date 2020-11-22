@@ -1,0 +1,8 @@
+//https://www.codewars.com/kata/558fc85d8fd1938afb000014/train/javascript
+
+
+
+function sumTwoSmallestNumbers(arr) {  
+  arr.sort((a, b) => a - b);
+  return arr[0] + arr[1];
+}
