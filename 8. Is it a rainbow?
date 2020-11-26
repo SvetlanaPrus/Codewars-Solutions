@@ -1,0 +1,28 @@
+//https://www.codewars.com/kata/59e7202ffc3c4952940000a9/train/javascript
+
+
+************************************* My solution:
+
+function sortRainbow(arr){
+  return (arr.join(',') === 'red,orange,yellow,green,blue,indigo,violet');
+}
+
+
+
+************************************* Drugie interesnie reshenija:
+
+function sortRainbow(colour){
+  return colour.map(e=>e[0]).join('')=='roygbiv'
+}
+
+
+function sortRainbow(colour){
+  return colour+'' == ['red','orange','yellow','green','blue','indigo','violet']+''
+}
+
+
+********************************** Eto ochen interesnij variant, to kak nado bilo sdelat:
+
+function sortRainbow(colour){
+  return ['red','orange','yellow','green','blue','indigo','violet'].every((v,i)=>colour[i] === v);
+}
