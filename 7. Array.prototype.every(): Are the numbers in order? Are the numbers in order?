@@ -1,0 +1,22 @@
+//https://www.codewars.com/kata/56b7f2f3f18876033f000307/train/javascript
+
+
+function inAscOrder(arr) {
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] > arr[i+1]) return false;
+  } 
+  return true;
+}
+
+
+********************************** Ochen interesnoe drugoe reshenie s codewars:
+
+//kopiruem massiv so vtorogo elementa (metod "slice") 
+//proverjaem uslovie dlja kazdogo elementa novogo massiva - 
+//pervij element novogo massiva >= pervomu elementu starogo massiva?
+// po suti mi sprashivaem (sm.starij massiv) vtoroj element >= pervogo?
+
+
+function inAscOrder(arr) {
+  return arr.slice(1).every((el,i) => arr[i] <= el);     
+}
