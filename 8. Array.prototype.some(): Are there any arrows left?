@@ -1,7 +1,15 @@
 //https://www.codewars.com/kata/559f860f8c0d6c7784000119/train/javascript
 
+**************************************** My solution:
 
 function anyArrows(arrows){
   console.log(arrows);
   return arrows.some( el => el.range && el.damaged !== true || el.damaged === false);
 }
+
+
+************************* Other solution:
+function anyArrows(arrows){
+  return arrows.some(el => !el.damaged);
+}
+
