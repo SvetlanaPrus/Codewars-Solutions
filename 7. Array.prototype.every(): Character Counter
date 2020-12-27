@@ -1,0 +1,9 @@
+
+
+function validateWord(str){
+  const newStr = str.toLowerCase().split('');
+  if (str.length === 1) return true;
+  if (newStr.every((el) => newStr.indexOf(el) !== newStr.lastIndexOf(el) )) return true;
+  if (newStr.every((el) => newStr.indexOf(el) === newStr.lastIndexOf(el) )) return true;
+  else return false;
+}
