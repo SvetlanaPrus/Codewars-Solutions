@@ -1,0 +1,11 @@
+//https://www.codewars.com/kata/55ccdf1512938ce3ac000056/train/javascript
+
+
+function isLockNessMonster(str) {
+  return /tree fiddy|3.50|('three','fifty')/g.test(str);            //vnimanie: "tree fiddy" ispolzuetsja bez ""; three/fifty ispolzuetsja v skobkah, "", i zerez ","
+}
+
+
+*************************************** Other solution:
+
+const isLockNessMonster = (str) => /tree fiddy|three fifty|3.50/.test(str);
