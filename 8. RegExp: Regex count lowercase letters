@@ -1,0 +1,22 @@
+//https://www.codewars.com/kata/56a946cd7bd95ccab2000055/train/javascript
+
+
+function lowercaseCount(str){
+  let a = str.search(/[a-z]+/);                               //proverjaem, est li sovpadenija. Esli est, to sistema vidast pervij index sovp.elementa
+  if (a >= 0) {                                               //esli sistema nashla, to index budet = 0 ili bolshe
+    return str.match(/[a-z]+/g).join('').length;              //vozvrashaem dlinu najdenih strok
+  } else {return 0;}                                          //v drugih sluchajah, vozvratit 0
+}
+
+
+************************************** Other solutions:
+
+function lowercaseCount(str){
+    return (str.match(/[a-z]/g) || []).length
+}
+
+
+function lowercaseCount(str){
+    var check = str.match(/[a-z]/g);
+    return check ? check.length : 0
+}
