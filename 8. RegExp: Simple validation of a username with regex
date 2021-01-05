@@ -13,3 +13,21 @@ Length should be between 4 and 16 characters (both included).
 function validateUsr(username) {
   return /^[a-z0-9_]{4,16}$/.test(username);             
 }
+
+
+*************************************************** Drugie reshenija:
+
+1) Метод search() выполняет поиск сопоставления между регулярным выражением и этим объектом String - str.search([regexp])
+При успехе метод search() возвращает индекс первого сопоставления с регулярным выражением внутри строки. В противном случае метод вернёт -1.
+
+function validateUsr(username) {
+  return username.search(/[a-z\d_]{4,16}$/) === 0 ? true : false;
+}
+
+
+2) Метод match() возвращает получившиеся совпадения при сопоставлении строки с регулярным выражением - str.match(regexp). 
+Возвращаемое значение: array. Объект Array, содержащий результаты сопоставления, или null, если ничего не было сопоставлено.
+
+function validateUsr(username) {
+return !!username.match(/^[a-z\d_]{4,16}$/)        //двойное НЕ(!!) используют для преобразования значений к логическому типу - true, false.
+}
