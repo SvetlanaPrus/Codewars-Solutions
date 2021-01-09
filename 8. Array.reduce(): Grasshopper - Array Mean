@@ -1,0 +1,6 @@
+//https://www.codewars.com/kata/55d277882e139d0b6000005d/train/javascript
+
+
+let findAverage = function (arr) {
+  return arr.reduce( (acc, curr) => acc + curr, 0)/arr.length;
+}
