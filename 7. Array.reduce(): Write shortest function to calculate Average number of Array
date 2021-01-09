@@ -1,0 +1,7 @@
+//https://www.codewars.com/kata/56c22cdbe0c0f7cae2001789/train/javascript
+
+
+
+function avg(a){
+  return a.reduce((acc, curr) => acc+curr, 0)/a.length;
+}
