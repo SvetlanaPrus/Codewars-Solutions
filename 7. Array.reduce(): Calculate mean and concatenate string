@@ -1,0 +1,17 @@
+//https://www.codewars.com/kata/56f7493f5d7c12d1690000b6/train/javascript
+
+
+
+function mean(arr){
+  let arrNum  = arr.filter(el => isNaN(+el) === false);
+  let num = arrNum.reduce((acc, curr) => acc+(+curr),0)/arrNum.length;
+  let str  = arr.filter(el => isNaN(+el) === true).reduce((acc, curr)=> acc+curr, '')
+  return [num, str]; 
+}
+
+
+************************************** Other solutions from CW:
+
+const mean = lst =>
+  [lst.filter(e=>/\d+/.test(e)).reduce((a,b)=>+a + +b)/10,
+   lst.filter(e=>/[a-z]/i.test(e)).join('')]
