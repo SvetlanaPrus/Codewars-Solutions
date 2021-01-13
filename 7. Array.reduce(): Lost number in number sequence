@@ -1,0 +1,6 @@
+//https://www.codewars.com/kata/595aa94353e43a8746000120/train/javascript
+
+
+function findDeletedNumber(a, b) {
+  return a.reduce((acc, curr) => acc + curr, 0) - b.reduce((acc, curr) => acc + curr, 0);
+}
