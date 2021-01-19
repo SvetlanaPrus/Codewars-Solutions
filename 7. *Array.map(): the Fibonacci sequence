@@ -1,0 +1,25 @@
+//https://www.codewars.com/kata/580777ee2e14accd9f000165/train/javascript
+
+
+function skiponacci(n) {
+  if (n === 1) return '1';
+  let a = 1, b = 1, arr = [1, 1];
+  for (let i = 3; i <= n; i++){
+    let c = a + b;
+    arr.push(c);
+    a = b;
+    b = c;
+  }
+return (arr.map ((el, i) => i % 2 === 0? el : "skip")+'').replace(/,/g, ' ');
+}
+
+
+****************************************** Other solutions from CW:
+
+function skiponacci(n) {
+  let arr = [1, 1];
+  for (let i = 2; i < n; i++) {
+    arr.push(arr[i - 2] + arr[i - 1]);
+  }
+ return n === 1 ? '1' : arr.map((el,i) => i % 2 !== 0 ? 'skip' : el).join(' ');
+}
