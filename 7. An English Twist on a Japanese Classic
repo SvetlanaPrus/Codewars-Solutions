@@ -1,0 +1,19 @@
+//https://www.codewars.com/kata/5b04be641839f1a0ab000151/train/javascript
+
+
+function shiritori(words) {
+  if (words.length === 0) return [];
+  if (words.length === 1) return words.includes('')? [] : words;
+  let newArray = [];
+  for (let i = 0; i < words.length-1; i++) {
+    if (words[i+1][0] !== words[i][words[i].length-1]) {
+      if (i === 0) {newArray.push(words[0]); break} else {break};
+    } else {
+      i === 0? newArray.push(words[i], words[i+1]) : newArray.push(words[i+1]);
+    }
+   }
+  return newArray.includes('')? [] : newArray;
+}
+
+
+**********************************
