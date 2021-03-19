@@ -1,0 +1,14 @@
+//https://www.codewars.com/kata/553e8b195b853c6db4000048/solutions/javascript/me/best_practice
+
+
+function hasUniqueChars(str){
+  let myarray = str.split('');
+  let unik = myarray.find(el => myarray.indexOf(el) !== myarray.lastIndexOf(el));
+  return unik === undefined;
+}
+
+
+
+************************ from best practise:
+function hasUniqueChars(str){
+return new Set(str).size == str.length                //new Set() - sozdaet nabor tolko iz unikalnih dannih. Est metodi dlja raboti s Set: .add, .delete, .has, .clear
