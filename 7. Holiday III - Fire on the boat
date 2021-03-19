@@ -1,0 +1,14 @@
+//https://www.codewars.com/kata/57e8fba2f11c647abc000944/train/javascript
+
+
+function fireFight(s){
+  let newArray = s.split(' ').map(el => el.replace("Fire", "~~")).join();
+  return newArray.replace(/,/g, ' ');
+}
+
+
+*********************************best practise:
+
+function fireFight(s){
+  return s.replace(/Fire/g, `~~`);
+}
